@@ -5,7 +5,7 @@ class JsonResource {
     }
 
     toArray(object){
-        
+        return object;
     }
 }
 
