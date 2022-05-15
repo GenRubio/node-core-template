@@ -1,16 +1,11 @@
 class ResourceCollection {
     constructor(request) {
-        this.object = request;
-        this.response = this.toArray(this.object);
-        this.returnResource();
-    }
-
-    toArray(object){
-        
-    }
-
-    returnResource() {
+        this.response = this.toArray(request);
         return this.response;
+    }
+
+    toArray(request){
+        return request;
     }
 }
 

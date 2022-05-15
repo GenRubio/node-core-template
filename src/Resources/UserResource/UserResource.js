@@ -4,10 +4,10 @@ class UserResource extends JsonResource {
         super(request);
     }
     
-    toArray(object) {
+    toArray(request) {
         return {
-            name: object.name,
-            email: object.email
+            name: request.name,
+            email: request.email
         }
     }
 }

@@ -4,8 +4,8 @@ class JsonResource {
         return this.response;
     }
 
-    toArray(object){
-        return object;
+    toArray(request){
+        return request;
     }
 }
 
