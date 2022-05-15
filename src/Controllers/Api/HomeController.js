@@ -4,7 +4,7 @@ const HomeController = {
             message: 'Kiriki API'
         };
         return res.json(respose);
-    }
+    },
 }
 
 module.exports = HomeController;

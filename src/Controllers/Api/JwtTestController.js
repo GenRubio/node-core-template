@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+
 const JwtTestController = {
     test: (req, res) => {
         jwt.verify(req.token, 'secretkey', (err, authData) => {

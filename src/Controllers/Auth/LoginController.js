@@ -1,4 +1,6 @@
 const jwt = require('jsonwebtoken');
+const UserResource = require('../../Resources/UserResource/UserResource');
+
 const LoginController = {
     login: (req, res) => {
         const { email, password } = req.body;
@@ -12,7 +14,7 @@ const LoginController = {
                         jwt.sign({ user }, 'secretkey', (err, token) => {
                             res.status(200).json({
                                 message: 'Login successful',
-                                data: user,
+                                data: new UserResource(user),
                                 token: token
                             });
                         });
