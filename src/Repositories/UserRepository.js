@@ -1,5 +1,6 @@
 const DB = require('../database/database');
 const User = require('../Models/User');
+
 const UserRepository = {
     getByEmail: (email) => {
         return new Promise((resolve, reject) => {
